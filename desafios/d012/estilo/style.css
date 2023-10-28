@@ -18,6 +18,7 @@
 html, body {
     min-height: 100vh;
     background-color: darkgray;
+    font-family: var(--fonte-menor);
 }
 
 a {
@@ -40,16 +41,12 @@ header {
 h1 {
     font-family: var(--fonte-titulo);
     font-variant: small-caps;
-    font-size: 12em;
-}
-
-header > p {
-    font-family: var(--fonte-menor);
+    font-size: 10vw;
 }
 
 section {
     font-family: var(--fonte-padrao);
-    font-size: 4em;
+    font-size: 3.5vw;
     padding-top: 10vh;
     padding-bottom: 10vh;
     padding-left: 30px;
@@ -67,7 +64,8 @@ section {
 
 .imagem > p {
     background-color: rgba(0, 0, 0, 0.37);
-    width: 760px;
+    display: inline-block;
+    padding: 10px;
 }
 
 footer {
@@ -75,5 +73,4 @@ footer {
     color: white;
     text-align: center;
     padding: 10px;
-    font-family: var(--fonte-menor);
 }
