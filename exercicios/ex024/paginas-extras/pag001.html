@@ -3,15 +3,182 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site de Teste</title>
+    <title>Tabelas</title>
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
             background-color: lightgray;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+
+        thead {
+            position: sticky;
+            top: -1px;
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: black;
+            color: white;
+        }
+
+        tbody > tr:nth-child(odd) {
+            background-color: white;
+        }
+
+        .num {
+            text-align: right;
+        }
+
+        img {
+            padding-right: 5px;
         }
     </style>
 </head>
 <body>
-    <h1>Isso é um teste</h1>
+    <h1>Uso de tabelas grandes</h1>
+    <table>
+        <caption>População das Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><img src=https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Bandeira_do_estado_de_S%C3%A3o_Paulo.svg/22px-Bandeira_do_estado_de_S%C3%A3o_Paulo.svg.png alt="sp">São Paulo</td>
+                <td class="num">44.411.238</td>
+            </tr>
+            <tr>
+                <td> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Bandeira_de_Minas_Gerais.svg/20px-Bandeira_de_Minas_Gerais.svg.png" alt="mg">Minas Gerais</td>
+                <td class="num">20.538.718</td>
+            </tr>
+            <tr>
+                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Bandeira_do_estado_do_Rio_de_Janeiro.svg/20px-Bandeira_do_estado_do_Rio_de_Janeiro.svg.png" alt="rj">Rio de Janeiro</td>
+                <td class="num">16.054.524</td>
+            </tr>
+            <tr>
+                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Bandeira_da_Bahia.svg/20px-Bandeira_da_Bahia.svg.png" alt="ba">Bahia</td>
+                <td class="num">14.141.626</td>
+            </tr>
+            <tr>
+                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Bandeira_do_Paran%C3%A1.svg/20px-Bandeira_do_Paran%C3%A1.svg.png" alt="pr">Paraná</td>
+                <td class="num">11.444.380</td>
+            </tr>
+            <tr>
+                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Bandeira_do_Rio_Grande_do_Sul.svg/20px-Bandeira_do_Rio_Grande_do_Sul.svg.png" alt="rg">Rio Grande do Sul</td>
+                <td class="num">10.882.965</td>
+            </tr>
+            <tr>
+                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Bandeira_de_Pernambuco.svg/20px-Bandeira_de_Pernambuco.svg.png" alt="pe">Pernambuco</td>
+                <td class="num">9.058.931</td>
+            </tr>
+            <tr>
+                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Bandeira_do_Cear%C3%A1.svg/20px-Bandeira_do_Cear%C3%A1.svg.png" alt="ce">Ceará</td>
+                <td class="num">8.794.957</td>
+            </tr>
+            <tr>
+                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Bandeira_do_Par%C3%A1.svg/20px-Bandeira_do_Par%C3%A1.svg.png" alt="pa">Pará</td>
+                <td class="num">8.121.025</td>
+            </tr>
+            <tr>
+                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Bandeira_de_Santa_Catarina.svg/20px-Bandeira_de_Santa_Catarina.svg.png" alt="sc">Santa Catarina</td>
+                <td class="num">7.610.361</td>
+            </tr>
+            <tr>
+                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Flag_of_Goi%C3%A1s.svg/20px-Flag_of_Goi%C3%A1s.svg.png" alt="go">Goiás</td>
+                <td class="num">7.056.495</td>
+            </tr>
+            <tr>
+                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Bandeira_do_Maranh%C3%A3o.svg/20px-Bandeira_do_Maranh%C3%A3o.svg.png" alt="ma">Maranhão</td>
+                <td class="num">6.775.805</td>
+            </tr>
+            <tr>
+                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Bandeira_da_Para%C3%ADba.svg/20px-Bandeira_da_Para%C3%ADba.svg.png" alt="pb">Paraíba</td>
+                <td class="num">3.974.687</td>
+            </tr>
+            <tr>
+                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Bandeira_do_Amazonas.svg/20px-Bandeira_do_Amazonas.svg.png" alt="am">Amazonas</td>
+                <td class="num">3.941.613</td>
+            </tr>
+            <tr>
+                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Bandeira_do_Esp%C3%ADrito_Santo.svg/20px-Bandeira_do_Esp%C3%ADrito_Santo.svg.png" alt="es">Espírito Santo</td>
+                <td class="num">3.833.712</td>
+            </tr>
+            <tr>
+                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Bandeira_de_Mato_Grosso.svg/20px-Bandeira_de_Mato_Grosso.svg.png" alt="mt">Mato Grosso</td>
+                <td class="num">3.658.649</td>
+            </tr>
+            <tr>
+                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Bandeira_do_Rio_Grande_do_Norte.svg/20px-Bandeira_do_Rio_Grande_do_Norte.svg.png" alt="rn">Rio Grande do Norte</td>
+                <td class="num">3.302.729</td>
+            </tr>
+            <tr>
+                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Bandeira_do_Piau%C3%AD.svg/20px-Bandeira_do_Piau%C3%AD.svg.png" alt="pi">Piauí</td>
+                <td class="num">3.272.199</td>
+            </tr>
+            <tr>
+                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Bandeira_de_Alagoas.svg/20px-Bandeira_de_Alagoas.svg.png" alt="al">Alagoas</td>
+                <td class="num">3.127.683</td>
+            </tr>
+            <tr>
+                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Bandeira_do_Distrito_Federal_%28Brasil%29.svg/20px-Bandeira_do_Distrito_Federal_%28Brasil%29.svg.png" alt="df">Distrito Federal</td>
+                <td class="num">2.817.381</td>
+            </tr>
+            <tr>
+                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Bandeira_de_Mato_Grosso_do_Sul.svg/20px-Bandeira_de_Mato_Grosso_do_Sul.svg.png" alt="ms">Mato Grosso do Sul</td>
+                <td class="num">2.757.013</td>
+            </tr>
+            <tr>
+                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Bandeira_de_Sergipe.svg/20px-Bandeira_de_Sergipe.svg.png" alt="se">Sergipe</td>
+                <td class="num">2.209.558</td>
+            </tr>
+            <tr>
+                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Bandeira_de_Rond%C3%B4nia.svg/20px-Bandeira_de_Rond%C3%B4nia.svg.png" alt="ro">Rondônia</td>
+                <td class="num">1.581.196</td>
+            </tr>
+            <tr>
+                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Bandeira_do_Tocantins.svg/20px-Bandeira_do_Tocantins.svg.png" alt="to">Tocantins</td>
+                <td class="num">1.511.460</td>
+            </tr>
+            <tr>
+                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Bandeira_do_Acre.svg/20px-Bandeira_do_Acre.svg.png" alt="ac">Acre</td>
+                <td class="num">830.018</td>
+            </tr>
+            <tr>
+                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Bandeira_do_Amap%C3%A1.svg/20px-Bandeira_do_Amap%C3%A1.svg.png" alt="ap">Amapá</td>
+                <td class="num">733.759</td>
+            </tr>
+            <tr>
+                <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Bandeira_de_Roraima.svg/20px-Bandeira_de_Roraima.svg.png" alt="rr">Roraima</td>
+                <td class="num">636.707</td>
+            </tr>
+        </tbody>
+        <tfoot>
+                <th scope="row">Total de Habitantes</th>
+                <td class="num"><strong>203.062.512</strong></td>
+        </tfoot>
+    </table>
 </body>
 </html>
