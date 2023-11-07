@@ -57,11 +57,13 @@ menu a:hover {
 
 main {
     width: 90vw;
+    max-width: 992px;
     background-color: white;
     margin: auto;
     padding: 10px;
     border-radius: 10px;
     margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 article > h2 {
